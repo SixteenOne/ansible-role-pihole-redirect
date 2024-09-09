@@ -1,0 +1,15 @@
+galaxy_info:
+  role_name: "pihole-redirect"
+  author: SixteenOne
+  description: PiHole Redirect - Redirect base URL to Admin Portal
+  company: SixteenOne
+  license: MIT
+  min_ansible_version: "2.1"
+  platforms:
+    - name: Debian
+    - name: EL
+    - name: Ubuntu
+  galaxy_tags:
+    - pihole
+    - redirect
+    - admin page

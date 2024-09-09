@@ -1,0 +1,9 @@
+---
+# tasks file for redirect
+- name: Add URL redirect rule to lighttpd.conf
+  lineinfile:
+    path: /etc/lighttpd/lighttpd.conf
+    insertafter: ^static-file\.exclude-extensions
+    line: url.redirect = ("^/$" => "/admin")
+    state: present
+  notify: restart lighttpd
